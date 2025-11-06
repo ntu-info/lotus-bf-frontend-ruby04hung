@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import * as nifti from 'nifti-reader-js'
 import { API_BASE } from '../api'
 
-const MNI_BG_URL = 'static/mni_2mm.nii.gz'
+const MNI_BG_URL = 'https://neurovault.org/media/images/38/MNI152.nii.gz'
 
 // Detect MNI152 2mm template dims & spacing (91x109x91, 2mm iso)
 function isStandardMNI2mm(dims, voxelMM) {
